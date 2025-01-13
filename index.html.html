@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Evaluation Webcarto</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/Eval_Webcarto.css" /> <!-- Chemin accès CSS -->
+    <link rel="stylesheet" href="CSS/MarkerCluster.css" /> <!-- Chemin accès CSS -->
+    <link rel="stylesheet" href="CSS/MarkerCluster.Default.css" /> <!-- Chemin accès CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="text/javascript" src="JS/leaflet.markercluster.js"></script>
+</head>
+<body>
+    <h1>Equipements sportifs dans les arrondissements de Lyon</h1>
+    <div id="logo-container">
+        <img src="img/logo.png" alt="Logo 1">
+        <img src="img/lyon2.png" alt="Logo 2">
+    </div>
+    <h2>Morgane GAUTHIER</h2>
+    <h3>M2 2024. Développement web et WebMapping </h3>
+    <div id="info">_</div>
+    <div id="container">
+        <div id="map"></div>
+        <div id="legend" class="legend">
+            <h4>Lignes de transport</h4>
+            <div id="legend-line-A"><i style="background:rgb(193, 28, 132)"></i> Metro A</div>
+            <div id="legend-line-B"><i style="background:rgb(28, 44, 193)"></i> Metro B</div>
+            <div id="legend-line-C"><i style="background:rgb(251, 206, 7)"></i> Metro C</div>
+            <div id="legend-line-D"><i style="background:rgb(49, 114, 23)"></i> Metro D</div>
+            <div id="legend-line-F1"><i style="background:rgb(253, 9, 9)"></i> Funiculaire F1</div>
+            <div id="legend-line-F2"><i style="background:rgb(4, 226, 251)"></i> Funiculaire F2</div>
+        </div>
+    </div>
+    <script src="JS/arrondissements_lyon.js"></script>
+    <script src="JS/transports.js"></script>
+    <script src="JS/sport.js"></script>
+    <script type="text/javascript" src="JS/Eval_Webcarto.js"></script> <!-- Chemin accès JS -->
+</body>
+</html>
