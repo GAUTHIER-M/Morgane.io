@@ -1,0 +1,100 @@
+body {
+    background-color: rgba(255, 255, 255, 0.921);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 25pt;
+    font-family: 'Georgia', sans-serif; /* Utilisation de la police Okaso */
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 10pt;
+    font-style: italic; /* Texte en italique */
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 5pt;
+    font-style: italic;
+    position: absolute; /* Positionner en fonction du parent */
+    top: 105px; /* Espace sous le logo */
+    right: 10px; /* Aligner à droite */
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-family: 'Georgia', sans-serif; /* Utilisation de la police Okaso */
+}
+
+#logo-container {
+    display: flex;
+    justify-content: flex-end; /* Aligne les images à droite */
+    gap: 10px; /* Espace entre les images */
+    position: absolute;
+    top: 10px; /* Ajustez la distance depuis le haut de la page */
+    right: 10px; /* Distance depuis le côté droit de la page */
+}
+
+#logo-container img {
+    height: 100px; /* Ajustez la hauteur selon vos préférences */
+    width: auto; /* Conserve les proportions */
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espace entre la carte et la légende */
+    margin-top: 20px; /* Marge supérieure pour le conteneur */
+}
+
+#map {
+    width: 80%; /* Ajustez selon vos besoins */
+    height: 500px;
+}
+
+#info {
+    margin-top: 10px; /* Ajoutez une marge supérieure si nécessaire */
+    padding: 10px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+.legend {
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    line-height: 1.5;
+    width: 20%; /* Ajustez selon nos besoins */
+    height: 300px;
+    overflow-y: auto; /* Permet de faire défiler la légende si elle est trop longue */
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.highlight {
+    border: 2px solid #00BFFF; /* Bordure bleu ciel */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Ajoutez du padding si nécessaire */
+}
+
+.my_popup {
+    background-color: darkslategrey;
+    color: lavenderblush;
+    border: 2px solid #FF24AA;
+}
